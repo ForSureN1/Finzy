@@ -28,11 +28,23 @@ dd {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
-    min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    line-height: 1;
+    color: #2C866C;
+    font-size: 18px;
+    font-family: 'Gilroy';
+}
+
+html,
+body {
+    height: 100%;
 }
 
 ul[class],
@@ -72,11 +84,51 @@ select {
 .container {
     margin: 0 auto;
     padding: 0 10px;
-    width: 1520px;
+    width: 1500px;
 }
 
 @media(max-width: 1920px) {
     .container {
-        width: 1520px;
+        width: 1500px;
     }
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: local('☺'), url('../fonts/Gilroy-Regular.woff') format('woff'), url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.ttf');
+    src: local('☺'), url('../fonts/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.eot');
+    src: local('☺'), url('../fonts/Gilroy-Semibold.woff') format('woff'), url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: local('☺'), url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/BebasNeueBold.otf');
+    src: local('☺'), url('../fonts/BebasNeueBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
 }
