@@ -34,17 +34,14 @@ a {
 }
 
 body {
+    min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1;
     color: #2C866C;
     font-size: 18px;
     font-family: 'Gilroy';
-}
-
-html,
-body {
-    height: 100%;
+    background: #F7FFFD;
 }
 
 ul[class],
