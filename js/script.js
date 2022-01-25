@@ -47,6 +47,24 @@ document.addEventListener('DOMContentLoaded', () => {
             target.classList.add('active')
         })
     }
-    appTabs();
+
+
+    function descTabsContent() {
+        let btn = document.querySelectorAll('.application__tab');
+        let block = document.querySelectorAll('.application__tab-content')
+        btn.forEach((key, index, array) => {
+            key.addEventListener('click', function() {
+                block.forEach((item, itemindex) => {
+                    item.classList.toggle('active', index === itemindex)
+                })
+            })
+        })
+    }
+    let app = document.querySelector('.desc')
+    if (app) {
+        appTabs();
+        descTabsContent();
+    }
+
 
 })
