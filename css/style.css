@@ -1425,6 +1425,7 @@ section {
 .buy__item.last {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -1465,6 +1466,9 @@ section {
     margin-bottom: 20px;
     font-size: 60px;
     font-weight: 700;
+    background: linear-gradient(180deg, #FDC92A 3.82%, #FF9802 99.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .old__price {
@@ -1474,6 +1478,7 @@ section {
     font-size: 30px;
     margin-left: 15px;
     font-weight: 300;
+    -webkit-text-fill-color: #2C866C;
 }
 
 .old__price::before {
@@ -1487,3 +1492,372 @@ section {
     transform: translateY(-50%);
     z-index: 1;
 }
+
+.buy .bigbub {
+    top: -10%;
+    left: 3%;
+}
+
+.buy .smallbub {
+    top: 40%;
+    transform: translateY(-50%);
+    right: 3%;
+}
+
+.video__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video__info {
+    width: 35%;
+}
+
+.pretitle {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.video__title {
+    display: flex;
+}
+
+.mod-title {
+    font-size: 200px;
+    font-family: 'Bebas';
+    font-weight: 700;
+}
+
+.mod-title-green {
+    position: relative;
+    color: #2C866C;
+}
+
+.mod-title-green img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 90%;
+}
+
+.mod-title-trans {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: #2C866C;
+    -webkit-text-stroke-width: 2px;
+}
+
+.video__benefits {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 2%;
+}
+
+.video__benefits-item {
+    width: 32%;
+}
+
+.benefits-svg {
+    width: 70px;
+    height: 70px;
+}
+
+.benefits-svg svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: visible;
+}
+
+.klyaksa {
+    animation: klyaksa 2s linear infinite;
+}
+
+@keyframes klyaksa {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.left-ruka {
+    animation: leftRuka 5s linear infinite;
+}
+
+@keyframes leftRuka {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+    10% {
+        transform: translate(2px, 2px) rotate(-2deg);
+    }
+    20% {
+        transform: translate(4px, 3px) rotate(-4deg);
+    }
+    30% {
+        transform: translate(2px, 2px) rotate(-2deg);
+    }
+    40% {
+        transform: translate(-2px, -2px) rotate(-8deg);
+    }
+    50% {
+        transform: translate(-4px, -4px) rotate(-6deg);
+    }
+    60% {
+        transform: translate(-2px, -2px) rotate(-4deg);
+    }
+    70% {
+        transform: translate(0px, 0px) rotate(-2deg);
+    }
+    80% {
+        transform: translate(3px, 3px) rotate(-8deg);
+    }
+    90% {
+        transform: translate(1px, 1px) rotate(-8deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+.right-ruka {
+    animation: rightRuka 3s linear infinite;
+}
+
+@keyframes rightRuka {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.bulk1 {
+    animation: bulk1 1s linear infinite;
+}
+
+@keyframes bulk1 {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    30% {
+        transform: translate(-2px, -4px);
+    }
+    50% {
+        transform: translate(-4px, -4px);
+    }
+    70% {
+        transform: translate(-6px, -4px);
+    }
+    100% {
+        transform: translate(-6px, -6px);
+        opacity: 0;
+    }
+}
+
+.bulk2 {
+    animation: bulk2 1s linear infinite;
+}
+
+@keyframes bulk2 {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    30% {
+        transform: translate(-2px, 2px);
+    }
+    50% {
+        transform: translate(-1px, 3px);
+    }
+    70% {
+        transform: translate(-4px, 2px);
+    }
+    100% {
+        transform: translate(-8px, 4px);
+        opacity: 0;
+    }
+}
+
+.bulk3 {
+    animation: bulk3 1s linear infinite;
+}
+
+@keyframes bulk3 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    25% {
+        transform: translate(6px, 2px);
+    }
+    50% {
+        transform: translate(10px, 4px);
+    }
+    75% {
+        transform: translate(14px, 5px);
+    }
+    100% {
+        transform: translate(15px, 8px);
+        opacity: 0;
+    }
+}
+
+.bulk4 {
+    animation: bulk4 1s linear infinite;
+}
+
+@keyframes bulk4 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    25% {
+        transform: translate(2px, -2px);
+    }
+    50% {
+        transform: translate(2px, -4px);
+    }
+    75% {
+        transform: translate(4px, -4px);
+    }
+    100% {
+        transform: translate(6px, -4px);
+        opacity: 0;
+    }
+}
+
+.flow1 {
+    animation: flow1 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes flow1 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.flow2 {
+    animation: flow2 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes flow2 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.flow-point {
+    animation: flowPoint 1s linear infinite;
+}
+
+@keyframes flowPoint {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.benefits-svg {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.benefits__num {
+    display: inline-block;
+    position: relative;
+    font-family: 'Bebas';
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.benefits__num span {
+    position: absolute;
+    left: 110%;
+    top: 0;
+    font-size: 20px;
+}
+
+.benefits__desc {
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.benefits__text {
+    margin: 30px 0;
+}
+
+
+/* .flower {
+    animation: flower 3s ease-in infinite;
+}
+
+@keyframes flower {
+    0% {
+        fill: #FE2712;
+    }
+    8% {
+        fill: #FC600A;
+    }
+    16% {
+        fill: #FB9902;
+    }
+    24% {
+        fill: #FCCC1A;
+    }
+    32% {
+        fill: #FEFE33;
+    }
+    40% {
+        fill: #B2D732;
+    }
+    48% {
+        fill: #66B032;
+    }
+    56% {
+        fill: #347C98;
+    }
+    64% {
+        fill: #0247FE;
+    }
+    72% {
+        fill: #4424D6;
+    }
+    80% {
+        fill: #8601AF;
+    }
+    88% {
+        fill: #C21460;
+    }
+    100% {
+        fill: #FE2712;
+    }
+} */
