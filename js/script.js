@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    function descTabsContent() {
+    function appTabsContent() {
         let btn = document.querySelectorAll('.application__tab');
         let block = document.querySelectorAll('.application__tab-content')
         btn.forEach((key, index, array) => {
@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         })
     }
-    let app = document.querySelector('.desc')
+    let app = document.querySelector('.application')
     if (app) {
         appTabs();
-        descTabsContent();
+        appTabsContent();
     }
 
 

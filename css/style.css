@@ -434,6 +434,7 @@ section {
 .yellow-link {
     position: relative;
     display: inline-block;
+    text-align: center;
     padding: 15px 80px;
     font-weight: 500;
     color: #ffffff;
@@ -1402,6 +1403,87 @@ section {
     line-height: 130%;
 }
 
-.application__tabs-bot {
-    padding-bottom: 100px;
+.application {
+    margin-bottom: 100px;
+}
+
+.item__title {
+    margin-right: 30px;
+}
+
+.item__title {
+    position: relative;
+}
+
+.item__title .head {
+    position: absolute;
+    left: 102%;
+    top: 5%;
+    font-size: 20px;
+}
+
+.buy__item.last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.buy__item-desctitle {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Bebas';
+    line-height: 130%;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.buy__item-desctitle span {
+    display: inline-block;
+    position: relative;
+}
+
+.buy__item-desctitle span strong {
+    position: absolute;
+    font-size: 15px;
+    top: -15%;
+    left: 105%;
+}
+
+.buy__item-desctext {
+    font-size: 18px;
+}
+
+.buy__item-desctext {
+    margin-bottom: 15px;
+}
+
+.buy__item-price {
+    font-family: 'Bebas';
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.old__price {
+    font-family: 'BebasLight';
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+.old__price::before {
+    position: absolute;
+    content: '';
+    background-color: #2C866C;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
 }

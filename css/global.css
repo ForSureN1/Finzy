@@ -129,3 +129,11 @@ select {
     font-weight: 700;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'BebasLight';
+    src: url('../fonts/BebasNeueLight.otf');
+    src: local('☺'), url('../fonts/BebasNeueLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
