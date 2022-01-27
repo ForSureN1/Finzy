@@ -1,4 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    window.addEventListener('scroll', addClassHeader)
+
+
+    let header = document.querySelector('.header')
+
+    function addClassHeader() {
+        if (window.scrollY > 50) {
+            header.classList.add('active')
+        } else {
+            header.classList.remove('active')
+        }
+    }
+    addClassHeader();
+
     function descTabs() {
         let descParentTabs = document.querySelector('.desc__tabs')
         let descTabs = document.querySelectorAll('.desc__tab')
