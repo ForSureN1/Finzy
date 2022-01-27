@@ -2224,3 +2224,117 @@ section {
 .ast:hover {
     color: #f1b100;
 }
+
+.about__container {
+    padding-top: 110px;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__info {
+    width: 44%;
+    margin-right: 50px;
+}
+
+.main-pretitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.small-mod-title {
+    font-size: 70px;
+    font-family: 'Bebas';
+    font-size: 70px;
+}
+
+.small-mod-title-white {
+    color: #ffffff;
+}
+
+.small-mod-title-trans {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #FFFFFF;
+}
+
+.about__text {
+    margin-bottom: 30px;
+}
+
+.about__count {
+    display: flex;
+    column-gap: 2%;
+}
+
+.about__count-item {
+    width: 20%;
+}
+
+.about__count-num {
+    font-size: 50px;
+    font-family: 'Bebas';
+    margin-bottom: 5px;
+}
+
+.about__link {
+    margin-top: 30px;
+}
+
+.about__img {
+    position: relative;
+    width: 624px;
+    height: 624px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.about__img::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(100% 100% at 0% 0%, rgba(81, 170, 144, 0) 51.87%, #51AA90 90.31%);
+    opacity: .5;
+}
+
+.image-74 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-75 {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    left: 50%;
+    bottom: -5%;
+    transform: translateX(-50%);
+    z-index: 1;
+    animation: image75 3s linear infinite;
+    transform-origin: bottom;
+}
+
+@keyframes image75 {
+    0% {
+        transform: translateX(-50%) rotate(0);
+    }
+    25% {
+        transform: translateX(-50%) rotate(15deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(0);
+    }
+    75% {
+        transform: translateX(-50%) rotate(-15deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(0);
+    }
+}
