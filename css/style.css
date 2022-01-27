@@ -2226,6 +2226,7 @@ section {
 }
 
 .about__container {
+    position: relative;
     padding-top: 110px;
     height: 100%;
     color: #ffffff;
@@ -2314,7 +2315,7 @@ section {
     height: 70%;
     object-fit: contain;
     left: 50%;
-    bottom: -5%;
+    bottom: 6%;
     transform: translateX(-50%);
     z-index: 1;
     animation: image75 3s linear infinite;
@@ -2337,4 +2338,55 @@ section {
     100% {
         transform: translateX(-50%) rotate(0);
     }
+}
+
+.about__benefits {
+    width: 75%;
+    position: absolute;
+    display: flex;
+    padding: 50px 0 50px 50px;
+    right: 0;
+    bottom: 5%;
+    z-index: 10;
+}
+
+.about__benefits-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.about__benefits-item {
+    display: flex;
+}
+
+.about__benefits::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 150%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 30px rgba(44, 134, 108, 0.2);
+    backdrop-filter: blur(30px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 100px 0px 0px 100px;
+    z-index: -1;
+}
+
+.mainsection.about {
+    overflow: hidden;
+}
+
+.about__benefits-text {
+    font-size: 16px;
+}
+
+.about__benefits-title {
+    font-family: 'Bebas';
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
