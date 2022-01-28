@@ -2549,3 +2549,155 @@ section {
 .package__item svg circle {
     transition: .2s linear;
 }
+
+.box__items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 4%;
+    row-gap: 60px;
+}
+
+.box__item {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(44, 134, 108, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 48%;
+    Padding: 20px 30px 20px 30px;
+}
+
+.box__img {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 220px;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.box__img img {
+    position: absolute;
+    width: 129px;
+    height: 178px;
+    object-fit: contain;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.box-letter {
+    font-size: 30px;
+    margin-left: 145px;
+    margin-right: 10px;
+}
+
+.box-count,
+.box-letter {
+    font-family: 'Bebas';
+    font-weight: 700;
+}
+
+.box-count {
+    font-size: 70px;
+    line-height: 75%;
+}
+
+.box__info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box__title {
+    margin-bottom: 10px;
+    font-family: 'Bebas';
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 15px;
+}
+
+.box__counter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 1.33%;
+}
+
+.box__count {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box__count-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.box__count-number {
+    font-size: 50px;
+    font-family: 'Bebas';
+    font-weight: 700;
+    color: #FDC92A;
+}
+
+.small-mod-title-orange {
+    color: #FDC92A;
+}
+
+.small-mod-title-trans.green {
+    -webkit-text-stroke: 1px #2C866C;
+}
+
+.company__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.company__item {
+    position: relative;
+    width: 40%;
+    min-height: 350px;
+}
+
+.morebubble {
+    top: 20%;
+    left: 20%;
+    width: 240px;
+    height: 210px;
+    animation: shake .8s linear infinite;
+}
+
+.bubble-78 {
+    top: 0;
+    left: 0;
+    width: 78px;
+    height: 78px;
+    animation: shake 1s linear infinite;
+}
+
+.bubble-57 {
+    top: 0;
+    right: 0;
+    width: 57px;
+    height: 57px;
+    animation: shake 1s linear infinite;
+}
+
+.bubble-41 {
+    bottom: 0;
+    left: 0;
+    width: 41px;
+    height: 41px;
+    animation: shake 1s linear infinite;
+}
+
+.company__item:nth-child(3) {
+    transform: rotate(180deg);
+}
