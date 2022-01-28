@@ -1,4 +1,4 @@
-<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="700" id="blobSvg">
     <path id="blob" fill="#000000">
         <animate attributeName = "d"
         dur="10000ms"

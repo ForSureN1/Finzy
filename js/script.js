@@ -81,5 +81,23 @@ document.addEventListener('DOMContentLoaded', () => {
         appTabsContent();
     }
 
+    let packagesLines = document.querySelectorAll('.package__item:not(.front)')
+    let packageSection = document.querySelector('.package')
+    if (packageSection) {
+        window.addEventListener('scroll', addPackagesLinesClass)
+        addPackagesLinesClass();
+
+        function addPackagesLinesClass() {
+            if (window.pageYOffset > (packageSection.getBoundingClientRect().top + packageSection.clientHeight)) {
+                packagesLines.forEach((item, i) => {
+                    setTimeout(() => {
+                        item.classList.add('active')
+                    }, i * 700)
+                })
+            }
+        }
+    }
+
+
 
 })
