@@ -2702,3 +2702,145 @@ section {
 .company__item:nth-child(3) {
     transform: rotate(180deg);
 }
+
+.sert__content {
+    position: absolute;
+    width: 53%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 110px;
+}
+
+.sert__slider-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: 1s ease-in-out;
+    width: 350px;
+    background: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.sert__slider-title {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 0 10px;
+    font-weight: 700;
+    font-family: 'Bebas';
+    font-size: 30px;
+    color: #2C866C;
+}
+
+.sert__slider-item.slick-current {
+    transform: scale(1);
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.reset-position {
+    position: unset;
+}
+
+.sert__slider-item.slick-active:not(.slick-current) {
+    margin-right: -40px;
+}
+
+.sert__slider-item img {
+    height: 450px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.slick_arrow {
+    background: rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    border: none;
+    transition: .2s linear;
+    border-radius: 100%;
+    position: absolute;
+    top: 110%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick_arrow svg {
+    width: 26px;
+    height: 24px;
+    object-fit: cover;
+}
+
+.slick_prev {
+    left: 0;
+}
+
+.slick_next {
+    left: 8%;
+}
+
+.slick-dots {
+    position: absolute;
+    top: 110%;
+    display: flex;
+    left: 20%;
+    height: 50px;
+    align-items: center;
+}
+
+.slick-dots li {
+    position: relative;
+    width: 80px;
+    height: 2px;
+    background: #ffffff;
+    transition: .2s linear;
+}
+
+.slick-dots button {
+    position: absolute;
+    opacity: 0;
+    font-size: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+li.slick-active~li {
+    background: rgba(255, 255, 255, .3);
+}
+
+.sert__count {
+    position: absolute;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.zoom {
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    transition: .2s linear;
+}
+
+.sert__slider-item .zoom {
+    opacity: 0;
+}
+
+.sert__slider-item.slick-current .zoom {
+    opacity: 1;
+}
+
+.sert__slider-item.slick-current {
+    pointer-events: unset;
+}
