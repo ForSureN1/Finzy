@@ -2265,13 +2265,14 @@ section {
     -webkit-text-stroke: 1px #FFFFFF;
 }
 
-.about__text {
-    margin-bottom: 30px;
+.about__title {
+    margin-bottom: 10px;
 }
 
 .about__count {
     display: flex;
     column-gap: 2%;
+    margin-top: 30px;
 }
 
 .about__count-item {
