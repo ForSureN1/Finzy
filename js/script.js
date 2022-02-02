@@ -16,8 +16,9 @@ $('.sert__slider').slick({
 
 
 //Count sliders
+let dots = document.querySelector('.slick-dots')
+
 function getBoundDots() {
-    let dots = document.querySelector('.slick-dots')
     let counter = document.querySelector('.sert__count')
         // console.log(dots.getBoundingClientRect().top)
         // console.log(dots.getBoundingClientRect().right)
@@ -25,7 +26,12 @@ function getBoundDots() {
     counter.style.left = dots.getBoundingClientRect().right + 50 + 'px';
 }
 
-getBoundDots();
+if(dots) {
+    getBoundDots();
+    window.addEventListener('resize', getBoundDots);
+}
+
+
 
 $('.sert__slider').on('afterChange', function(event, slick, currentSlide) {
     function getCurrentSlide() {
@@ -39,8 +45,6 @@ $('.sert__slider').on('afterChange', function(event, slick, currentSlide) {
     }
     getCurrentSlide();
 })
-
-window.addEventListener('resize', getBoundDots);
 
 document.addEventListener('DOMContentLoaded', () => {
 
