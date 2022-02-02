@@ -14,12 +14,14 @@ $('.sert__slider').slick({
 })
 
 
+
+//Count sliders
 function getBoundDots() {
     let dots = document.querySelector('.slick-dots')
     let counter = document.querySelector('.sert__count')
         // console.log(dots.getBoundingClientRect().top)
         // console.log(dots.getBoundingClientRect().right)
-    counter.style.top = dots.getBoundingClientRect().top + 'px';
+    counter.style.top = dots.getBoundingClientRect().top + window.scrollY + 'px';
     counter.style.left = dots.getBoundingClientRect().right + 50 + 'px';
 }
 
@@ -43,7 +45,6 @@ window.addEventListener('resize', getBoundDots);
 document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', addClassHeader)
-
 
     let header = document.querySelector('.header')
 
@@ -140,6 +141,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+
+    $('.accord__item').on("click", function(e) {
+        const target = e.target
+        if (target.classList.contains('active')) {
+            $(target.childNodes[3]).slideUp();
+            target.classList.remove('active')
+        } else {
+            $('.accord__content').slideUp();
+            $(target.childNodes[3]).slideDown();
+            $('.accord__item').removeClass('active')
+            target.classList.add('active')
+        }
+    });
 
 
 })
