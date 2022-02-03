@@ -621,6 +621,7 @@ section {
 
 .img-desc {
     top: 0;
+    width: 650px;
 }
 
 .wave {
@@ -3475,6 +3476,35 @@ li.slick-active~li {
     .dust__sertif>svg {
         width: 80px;
     }
+    .desc__info-title {
+        font-size: 65px;
+    }
+    .img-desc {
+        width: 500px;
+    }
+    .content {
+        padding: 50px;
+    }
+    .desc__img {
+        width: 330px;
+        height: 360px;
+        margin-right: -130px;
+    }
+    .desc__tabs {
+        width: 36%;
+    }
+    .bigbub {
+        width: 180px;
+        height: 180px;
+    }
+    .avgbub {
+        width: 130px;
+        height: 130px;
+    }
+    .smallbub {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 @media(max-width: 1400px) {
@@ -3496,6 +3526,29 @@ li.slick-active~li {
     }
     .shadow-dust {
         width: 500px;
+    }
+    .desc__img {
+        width: 270px;
+        height: 290px;
+    }
+    .desc__tabs {
+        width: 38%;
+    }
+    .desc__tab-img {
+        width: 60px;
+        height: 60px;
+    }
+    .ye-line-2 {
+        left: 17%;
+    }
+    .ye-line-3 {
+        left: 21%;
+    }
+    .ye-line-4 {
+        left: 17.5%;
+    }
+    .desc__info-title {
+        font-size: 50px;
     }
 }
 
@@ -3519,6 +3572,45 @@ li.slick-active~li {
     }
     body {
         font-size: 16px;
+    }
+    .lang__choice {
+        opacity: 1;
+        pointer-events: unset;
+    }
+    .lang__active {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .desc__line svg {
+        display: none;
+    }
+    .desc__tab {
+        padding-right: 0!important;
+        margin-bottom: 40px;
+    }
+    .desc__tab:last-child {
+        margin-bottom: 0;
+    }
+    .desc__col {
+        position: static;
+    }
+    .ye-line-box {
+        display: none;
+    }
+    .desc__tab-text {
+        width: 50%;
+    }
+    .desc__img {
+        width: 240px;
+        height: 240px;
+        margin-right: -80px;
+    }
+    .yellow-link {
+        padding: 15px 50px;
+        white-space: nowrap;
+    }
+    .img-desc {
+        width: 400px;
     }
 }
 
@@ -3556,6 +3648,15 @@ li.slick-active~li {
     }
     .dust__sertif svg:last-child {
         display: none;
+    }
+    .desc__info-title {
+        font-size: 42px;
+    }
+}
+
+@media(max-width: 950px) {
+    .desc__container {
+        flex-wrap: wrap;
     }
 }
 
@@ -3602,7 +3703,7 @@ li.slick-active~li {
         right: 0;
     }
     .header__nav {
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.3);
         border-radius: 10px 0px 0px 10px;
         padding: 40px 50px;
         transition: .1s linear;
