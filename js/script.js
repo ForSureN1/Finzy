@@ -48,6 +48,14 @@ $('.sert__slider').on('afterChange', function(event, slick, currentSlide) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    //mobile 
+    let hamb = document.querySelector('.hamb')
+    hamb.addEventListener('click', () => {
+        hamb.classList.toggle('active');
+        document.querySelector('.header__menu ').classList.toggle('active')
+    })
+
+
     window.addEventListener('scroll', addClassHeader)
 
     let header = document.querySelector('.header')
