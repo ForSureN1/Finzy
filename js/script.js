@@ -26,7 +26,7 @@ function getBoundDots() {
     counter.style.left = dots.getBoundingClientRect().right + 50 + 'px';
 }
 
-if(dots) {
+if (dots) {
     getBoundDots();
     window.addEventListener('resize', getBoundDots);
 }
@@ -162,20 +162,20 @@ document.addEventListener('DOMContentLoaded', () => {
     //START
 
     let rating = document.querySelector('.stars')
-        ratingItem = rating.querySelectorAll('.js-star')
+    ratingItem = document.querySelectorAll('.js-star')
 
     let submitForm = document.querySelector('.js-submit')
 
-    if(submitForm) {
+    if (submitForm) {
         submitForm.addEventListener('click', (e) => {
-            if(document.querySelector('.hidden__input-star').value === '') {
+            if (document.querySelector('.hidden__input-star').value === '') {
                 e.preventDefault();
                 alert('Выберите количество звезд!')
             }
         })
         rating.addEventListener('click', (e) => {
             let target = e.target;
-            if(target.classList.contains('js-star')) {
+            if (target.classList.contains('js-star')) {
                 removeClassStar(ratingItem, 'current-active')
                 target.classList.add('active', 'current-active')
                 let indexStar = parseInt([...target.parentNode.children].indexOf(target) + 1)
@@ -184,51 +184,53 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         rating.addEventListener('mouseover', (e) => {
             let target = e.target;
-            if(target.classList.contains('js-star')) {
+            if (target.classList.contains('js-star')) {
                 removeClassStar(ratingItem, 'active')
                 target.classList.add('active')
                 mouserOverActiveClass(ratingItem);
             }
         })
         rating.addEventListener('mouseout', (e) => {
-            addClassStar(ratingItem,'active')
+            addClassStar(ratingItem, 'active')
             mouserOutActiveClass(ratingItem)
         })
+
         function removeClassStar(arr) {
-            for(let i = 0, Ilen = arr.length; i < Ilen; i++) {
-                for(let j = 1; j < arguments.length; j++) {
+            for (let i = 0, Ilen = arr.length; i < Ilen; i++) {
+                for (let j = 1; j < arguments.length; j++) {
                     ratingItem[i].classList.remove(arguments[j])
                 }
             }
         }
+
         function addClassStar(arr) {
-            for(let i = 0, Ilen = arr.length; i < Ilen; i++) {
-                for(let j = 1; j < arguments.length; j++) {
+            for (let i = 0, Ilen = arr.length; i < Ilen; i++) {
+                for (let j = 1; j < arguments.length; j++) {
                     ratingItem[i].classList.add(arguments[j])
                 }
             }
         }
-    
+
         function mouserOverActiveClass(arr) {
-            for(let i = 0, Ilen = arr.length; i < Ilen; i++) {
-                if(arr[i].classList.contains('active')) {
+            for (let i = 0, Ilen = arr.length; i < Ilen; i++) {
+                if (arr[i].classList.contains('active')) {
                     break;
                 } else {
                     arr[i].classList.add('active');
                 }
             }
         }
-    
+
         function mouserOutActiveClass(arr) {
-            for(let i = arr.length-1; i >= 0; i--) {
-                if(arr[i].classList.contains('current-active')) {
+            for (let i = arr.length - 1; i >= 0; i--) {
+                if (arr[i].classList.contains('current-active')) {
                     break;
                 } else {
                     arr[i].classList.remove('active');
                 }
             }
         }
-    
+
     }
 
 })
