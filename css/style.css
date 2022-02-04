@@ -3744,6 +3744,12 @@ li.slick-active~li {
     .appication__container {
         padding: 50px 0;
     }
+    .header__container {
+        padding: 15px 0;
+    }
+    .dust__container {
+        padding-top: 90px;
+    }
 }
 
 @media(max-width: 950px) {
