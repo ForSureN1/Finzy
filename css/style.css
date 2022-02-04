@@ -3952,7 +3952,7 @@ li.slick-active~li {
 
 @media(max-width: 500px) {
     .dust-text-poro {
-        top: 25%;
+        top: 28%;
     }
     .dust-text-shok {
         top: 65%;
@@ -3989,5 +3989,8 @@ li.slick-active~li {
     }
     .desc__img {
         width: 100%;
+    }
+    .shadow-dust {
+        top: 62%;
     }
 }
