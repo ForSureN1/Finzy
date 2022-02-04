@@ -1,5 +1,9 @@
 /* Указываем box sizing */
 
+html {
+    height: 100%;
+}
+
 *,
 *::before,
 *::after {
