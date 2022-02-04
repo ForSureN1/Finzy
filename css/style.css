@@ -3546,6 +3546,12 @@ li.slick-active~li {
     .buy__item:nth-child(1) {
         width: 20%;
     }
+    .video__content {
+        height: 460px;
+    }
+    .mod-title {
+        font-size: 180px;
+    }
 }
 
 @media(max-width: 1400px) {
@@ -3642,6 +3648,9 @@ li.slick-active~li {
     .item__title {
         margin-right: 130px;
     }
+    .mod-title {
+        font-size: 160px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -3730,6 +3739,31 @@ li.slick-active~li {
     }
     .application {
         margin-bottom: 50px;
+    }
+    .video__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .video__info {
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video__benefits {
+        column-gap: 80px;
+    }
+    .benefits__text {
+        text-align: center;
+    }
+    .video__benefits-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video__content {
+        width: 100%;
     }
 }
 
@@ -4012,6 +4046,9 @@ li.slick-active~li {
     .buy__item-desctitle {
         width: 100%;
     }
+    .mod-title {
+        font-size: 140px;
+    }
 }
 
 @media(max-width: 650px) {
@@ -4061,6 +4098,27 @@ li.slick-active~li {
     .buy__item.last {
         width: 100%;
     }
+    .video__benefits {
+        flex-wrap: wrap;
+        column-gap: 4%;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .video__benefits-item {
+        width: 48%;
+    }
+    .benefits__desc {
+        margin-bottom: 5px;
+    }
+    .benefits-svg {
+        margin: 10px 0px;
+    }
+    .video__content {
+        height: 400px;
+    }
+    .video__info {
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width: 500px) {
@@ -4083,6 +4141,9 @@ li.slick-active~li {
         width: 250px;
         height: 180px;
     }
+    .video__content {
+        height: 350px;
+    }
 }
 
 @media(max-width: 450px) {
@@ -4093,6 +4154,14 @@ li.slick-active~li {
     .buy__item:not(:first-child,
      :last-child) {
         width: 75%;
+    }
+    .video__content {
+        height: 300px;
+    }
+    .proper {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
     }
 }
 
@@ -4115,5 +4184,8 @@ li.slick-active~li {
     .buy__item:not(:first-child,
      :last-child) {
         width: 80%;
+    }
+    .video__benefits-item {
+        width: 100%;
     }
 }
