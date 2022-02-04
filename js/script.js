@@ -48,6 +48,18 @@ $('.sert__slider').on('afterChange', function(event, slick, currentSlide) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    let benefits = document.querySelector('.about__notes')
+    let benefitsContent = document.querySelector('.about__benefits')
+    if (benefits) {
+        if (window.innerWidth < 993) {
+            benefits.addEventListener('click', () => {
+                benefits.classList.toggle('active')
+                benefitsContent.classList.toggle('active')
+            })
+        }
+    }
+
+
     //mobile 
     let hamb = document.querySelector('.hamb')
     hamb.addEventListener('click', () => {
