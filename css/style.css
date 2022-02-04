@@ -3933,6 +3933,9 @@ li.slick-active~li {
     .more__link {
         top: 65%;
     }
+    .dust-text-poro {
+        top: 27%;
+    }
 }
 
 @media(max-width: 600px) {
@@ -3958,12 +3961,12 @@ li.slick-active~li {
     .dust__elems {
         justify-content: center;
     }
+    .dust-text-poro {
+        top: 25%;
+    }
 }
 
 @media(max-width: 500px) {
-    .dust-text-poro {
-        top: 28%;
-    }
     .dust-text-shok {
         top: 65%;
     }
@@ -3977,6 +3980,10 @@ li.slick-active~li {
     }
     .shadow-dust {
         width: 60%;
+    }
+    .dust-text-shok {
+        width: 250px;
+        height: 180px;
     }
 }
 
