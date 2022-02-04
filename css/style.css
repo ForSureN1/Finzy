@@ -621,7 +621,7 @@ section {
 
 .img-desc {
     top: 0;
-    width: 650px;
+    max-width: 650px;
 }
 
 .wave {
@@ -3480,10 +3480,10 @@ li.slick-active~li {
         font-size: 65px;
     }
     .img-desc {
-        width: 500px;
+        max-width: 500px;
     }
     .content {
-        padding: 50px;
+        padding: 50px 0;
     }
     .desc__img {
         width: 330px;
@@ -3610,7 +3610,7 @@ li.slick-active~li {
         white-space: nowrap;
     }
     .img-desc {
-        width: 400px;
+        max-width: 400px;
     }
 }
 
@@ -3652,11 +3652,52 @@ li.slick-active~li {
     .desc__info-title {
         font-size: 42px;
     }
+    .bigbub {
+        width: 150px;
+        height: 150px;
+    }
+    .img-desc {
+        max-width: 300px;
+    }
 }
 
 @media(max-width: 950px) {
     .desc__container {
         flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .desc__col {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 2%;
+        row-gap: 40px;
+    }
+    .desc__tabs,
+    .desc__info-tabs,
+    .desc__tab-text {
+        width: 100%;
+    }
+    .desc__info-tabs {
+        text-align: center;
+    }
+    .desc__img {
+        margin: 50px 0;
+        width: 300px;
+        height: 300px;
+    }
+    .desc__info-title {
+        margin-bottom: 20px;
+    }
+    .desc__tab {
+        width: 32%;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+    .desc__tab-text {
+        margin: 10px 0 0 0;
+        text-align: center;
     }
 }
 
@@ -3753,6 +3794,21 @@ li.slick-active~li {
     }
 }
 
+@media(max-width: 700px) {
+    .desc__img {
+        order: 3;
+    }
+    .desc__col {
+        margin-top: 30px;
+    }
+    .desc__tab {
+        width: 100%;
+    }
+    .desc__img {
+        margin-bottom: 0;
+    }
+}
+
 @media(max-width: 650px) {
     .more__link {
         top: 65%;
@@ -3813,5 +3869,8 @@ li.slick-active~li {
     .dust-text-poro {
         width: 240px;
         height: 190px;
+    }
+    .desc__img {
+        width: 100%;
     }
 }
