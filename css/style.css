@@ -2190,6 +2190,7 @@ section {
     width: 100%;
     height: 200px;
     perspective: 1000px;
+    overflow: hidden;
 }
 
 .img-1,
@@ -2248,6 +2249,10 @@ section {
 .footer__logo,
 .footer__bot-item {
     width: 20%;
+}
+
+.footer__bot-item {
+    white-space: nowrap;
 }
 
 .ast {
@@ -3457,6 +3462,10 @@ li.slick-active~li {
     display: none;
 }
 
+.footer__item.images {
+    overflow: hidden;
+}
+
 @media(max-width: 1600px) {
     .dust-text-poro {
         width: 450px;
@@ -3681,6 +3690,23 @@ li.slick-active~li {
     .instagram__item-date {
         font-size: 12px;
     }
+    .img-2-wrapper {
+        right: 0;
+    }
+    .footer__item.images img {
+        width: 100%;
+        height: 100%;
+    }
+    .footer__try {
+        padding: 15px 30px;
+    }
+    .footer__logo,
+    .footer__bot-item {
+        width: auto;
+    }
+    .footer__bot {
+        justify-content: space-between;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -3810,6 +3836,12 @@ li.slick-active~li {
     }
     .txt {
         font-size: 16px;
+    }
+    .footer__item.images {
+        display: none;
+    }
+    .footer__item:nth-child(4) {
+        width: 30%;
     }
 }
 
@@ -4031,6 +4063,25 @@ li.slick-active~li {
     .instagram__item-text {
         font-size: 18px;
     }
+    .footer__top {
+        flex-wrap: wrap;
+    }
+    .footer__logo {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .footer__logo img {
+        margin: 0 auto;
+    }
+    .footer__item {
+        width: 32%;
+    }
+    .footer__item:nth-child(4) {
+        width: 35%;
+    }
+    .footer__item:nth-child(2) {
+        width: 20%;
+    }
 }
 
 @media(max-width: 750px) {
@@ -4204,6 +4255,21 @@ li.slick-active~li {
     .instagram__item-header {
         height: 40px;
     }
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .footer__logo {
+        margin-bottom: 0;
+    }
+    .footer__item {
+        width: 100%!important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    */
 }
 
 @media(max-width: 550px) {
@@ -4263,6 +4329,10 @@ li.slick-active~li {
     }
     .instagram__item-img {
         height: 240px;
+    }
+    .footer__bot {
+        flex-direction: column;
+        row-gap: 30px;
     }
 }
 
