@@ -3894,6 +3894,10 @@ li.slick-active~li {
     .application__tab {
         width: 100%;
     }
+    .bigbub {
+        width: 130px;
+        height: 130px;
+    }
 }
 
 @media(max-width: 700px) {
