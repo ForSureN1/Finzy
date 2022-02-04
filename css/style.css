@@ -3870,8 +3870,8 @@ li.slick-active~li {
         height: 200px;
     }
     .dust {
-        width: 234px;
-        height: 235px;
+        width: 225px;
+        height: 215px;
     }
     .shadow-dust {
         width: 400px;
@@ -4077,6 +4077,7 @@ li.slick-active~li {
     }
     .shadow-dust {
         width: 60%;
+        top: 67%;
     }
     .dust-text-shok {
         width: 250px;
@@ -4109,7 +4110,7 @@ li.slick-active~li {
         width: 100%;
     }
     .shadow-dust {
-        top: 62%;
+        top: 68%;
     }
     .buy__item:not(:first-child,
      :last-child) {
