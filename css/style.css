@@ -3837,13 +3837,13 @@ li.slick-active~li {
         flex: 0 0 400px;
     }
     .accord__title {
-        font-size: 26px;
+        font-size: 30px;
     }
     .accord__item {
         padding: 15px;
     }
     .accord__id {
-        right: 96%;
+        right: 98%;
     }
     .form__title {
         font-size: 38px;
@@ -4378,7 +4378,7 @@ li.slick-active~li {
     }
     .form__content {
         flex: 0 0 350px;
-        margin-right: 50px;
+        margin-right: 70px;
     }
     .form__textarea {
         height: 100px;
@@ -4530,9 +4530,6 @@ li.slick-active~li {
     .quest__accord {
         width: 80%;
         align-self: center;
-    }
-    .accord__id {
-        right: 97%;
     }
     .accord__title {
         font-size: 34px;
@@ -5090,7 +5087,7 @@ li.slick-active~li {
         padding-top: 150px;
     }
     .accord__title {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
