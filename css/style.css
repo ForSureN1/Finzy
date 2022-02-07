@@ -4434,6 +4434,11 @@ li.slick-active~li {
     .footer {
         margin-top: 30px;
     }
+    .morebubble {
+        width: 140px;
+        height: 120px;
+        left: 40%;
+    }
 }
 
 @media(max-width: 750px) {
