@@ -3037,6 +3037,7 @@ li.slick-active~li {
     backdrop-filter: blur(30px);
     border-radius: 20px;
     cursor: pointer;
+    border-top-left-radius: 0;
 }
 
 .accord__items {
@@ -3595,6 +3596,21 @@ li.slick-active~li {
         width: 119px;
         height: 158px;
     }
+    .accord__item {
+        padding: 25px;
+    }
+    .accord__title {
+        font-size: 32px;
+    }
+    .accord__id {
+        width: 46px;
+        height: 46px;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    .form__content {
+        margin-right: 150px;
+    }
 }
 
 @media(max-width: 1400px) {
@@ -3810,6 +3826,30 @@ li.slick-active~li {
     }
     .slick_next {
         left: 10%;
+    }
+    .form__title {
+        font-size: 48px;
+    }
+    .form__content {
+        margin-right: 100px;
+    }
+    .form__content {
+        flex: 0 0 400px;
+    }
+    .accord__title {
+        font-size: 26px;
+    }
+    .accord__item {
+        padding: 15px;
+    }
+    .accord__id {
+        right: 96%;
+    }
+    .form__title {
+        font-size: 38px;
+    }
+    .form__wrapper {
+        padding: 20px;
     }
 }
 
@@ -4336,6 +4376,13 @@ li.slick-active~li {
     .sert .about__info {
         width: 52%;
     }
+    .form__content {
+        flex: 0 0 350px;
+        margin-right: 50px;
+    }
+    .form__textarea {
+        height: 100px;
+    }
 }
 
 @media(max-width: 850px) {
@@ -4470,6 +4517,25 @@ li.slick-active~li {
     }
     .box__counter {
         row-gap: 20px;
+    }
+    .quest__container {
+        flex-direction: column;
+    }
+    .form__content {
+        margin-right: 0;
+        max-width: 60%;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+    .quest__accord {
+        width: 80%;
+        align-self: center;
+    }
+    .accord__id {
+        right: 97%;
+    }
+    .accord__title {
+        font-size: 34px;
     }
 }
 
@@ -4822,6 +4888,12 @@ li.slick-active~li {
         width: 15px;
         height: 15px;
     }
+    .form__content {
+        max-width: 500px;
+    }
+    .accord__title {
+        font-size: 30px;
+    }
 }
 
 @media(max-width: 550px) {
@@ -5016,6 +5088,9 @@ li.slick-active~li {
     }
     .sert {
         padding-top: 150px;
+    }
+    .accord__title {
+        font-size: 24px;
     }
 }
 
