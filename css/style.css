@@ -4647,6 +4647,9 @@ li.slick-active~li {
 }
 
 @media(max-width: 768px) {
+    .contact__container {
+        padding-top: 150px;
+    }
     .about__container.about-page {
         flex-direction: column;
     }
