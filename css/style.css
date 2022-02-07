@@ -4038,6 +4038,9 @@ li.slick-active~li {
     .small-mod-title {
         font-size: 54px;
     }
+    .about__container {
+        padding-top: 90px;
+    }
 }
 
 @media(max-width: 950px) {
@@ -4228,6 +4231,20 @@ li.slick-active~li {
     }
     .about__count {
         column-gap: 2%;
+    }
+    .about__benefits-title {
+        font-size: 18px;
+    }
+    .about__benefits-item img {
+        width: 40px;
+        height: 40px;
+    }
+    .about__benefits-text {
+        font-size: 14px;
+    }
+    .about__benefits {
+        height: 75%;
+        bottom: 60px;
     }
 }
 
@@ -4503,7 +4520,7 @@ li.slick-active~li {
         margin-bottom: 10px;
     }
     .about__benefits {
-        height: 85%;
+        height: 80%;
     }
     .about__benefits {
         width: 250px;
@@ -4603,7 +4620,7 @@ li.slick-active~li {
         height: 60px;
     }
     .about__count {
-        justify-content: space-between;
+        column-gap: 5%;
     }
 }
 
