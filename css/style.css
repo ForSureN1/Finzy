@@ -3089,7 +3089,7 @@ li.slick-active~li {
 .man__img .man {
     position: absolute;
     bottom: 0;
-    width: 90%;
+    width: 100%;
     height: 750px;
     object-fit: contain;
 }
@@ -3611,6 +3611,9 @@ li.slick-active~li {
     .form__content {
         margin-right: 150px;
     }
+    .man__img .man {
+        height: 700px;
+    }
 }
 
 @media(max-width: 1400px) {
@@ -3851,6 +3854,17 @@ li.slick-active~li {
     .form__wrapper {
         padding: 20px;
     }
+    .impression__man {
+        position: absolute;
+        right: 5%;
+    }
+    .man__img .man {
+        height: 650px;
+        z-index: 0;
+    }
+    .reviews__main:nth-last-of-type(1) {
+        top: 25%;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -4058,6 +4072,9 @@ li.slick-active~li {
     .sert__content {
         width: 55%;
     }
+    .reviews__main:nth-last-of-type(2) {
+        left: -30%;
+    }
 }
 
 @media(max-width: 1100px) {
@@ -4075,6 +4092,13 @@ li.slick-active~li {
     .slick-dots,
     .sert__count {
         height: 40px;
+    }
+    .reviews__main {
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .impression__man {
+        width: 60%;
+        bottom: -20px;
     }
 }
 
@@ -4222,6 +4246,17 @@ li.slick-active~li {
     }
     .sert__content {
         padding-top: 90px;
+    }
+    .impression__man {
+        width: 100%;
+        right: 0;
+    }
+    .man__img .man {
+        max-width: 600px;
+        right: 0;
+    }
+    .reviews__main:nth-last-of-type(2) {
+        left: 0;
     }
 }
 
@@ -4534,6 +4569,11 @@ li.slick-active~li {
     .accord__title {
         font-size: 34px;
     }
+    .man__img .man {
+        max-width: 500px;
+        height: 550px;
+        width: 90%;
+    }
 }
 
 @media(max-width: 768px) {
@@ -4591,6 +4631,13 @@ li.slick-active~li {
         width: 140px;
         height: 120px;
         left: 40%;
+    }
+    .b1-130 {
+        width: 100px;
+        height: 100px;
+    }
+    .reviews-page .about__info {
+        padding-bottom: 80px;
     }
 }
 
@@ -4689,6 +4736,13 @@ li.slick-active~li {
         width: 100%;
         text-align: center;
     }
+    .reviews__main {
+        display: none;
+    }
+    .reviews-page .about__info {
+        width: 52%;
+        z-index: 10;
+    }
 }
 
 @media(max-width: 700px) {
@@ -4765,6 +4819,10 @@ li.slick-active~li {
     .company__item {
         width: 70%;
         min-height: 300px;
+    }
+    .reviews-page .about__info {
+        width: 80%;
+        z-index: 10;
     }
 }
 
@@ -5088,6 +5146,14 @@ li.slick-active~li {
     }
     .accord__title {
         font-size: 28px;
+    }
+    .reviews-page .about__info {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+    .man__img .man {
+        height: auto;
     }
 }
 
