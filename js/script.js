@@ -299,10 +299,13 @@ function setClassBub() {
 
 setClassBub();
 
+document.querySelector('body').style.overflow = "hidden";
+
 window.onload = () => {
     preloader.classList.add('disabled')
     setTimeout(() => {
         preloader.style.display = 'none';
+        document.querySelector('body').style.overflow = "unset";
     }, 1000)
     clearTimeout(timeout)
 }
