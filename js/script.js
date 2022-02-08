@@ -273,3 +273,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 })
+
+let preloader = document.querySelector('.preloader')
+let preloadImg = document.querySelectorAll('.pr-bub');
+let arrayBub = Array.from(preloadImg)
+let reverseArray = arrayBub.reverse();
+
+function setClassBub() {
+    reverseArray.forEach((bub, index) => {
+        setTimeout(() => {
+            bub.classList.add('animationPreBub')
+            if (index === (reverseArray.length - 1)) {
+                setTimeout(() => {
+                    reverseArray.forEach((item) => {
+                        item.classList.remove('animationPreBub')
+                    })
+                    setClassBub();
+                }, 500)
+            }
+        }, 300 * (index + 1))
+    })
+}
+
+setClassBub();
+
+window.onload = () => {
+    preloader.classList.add('disabled')
+}

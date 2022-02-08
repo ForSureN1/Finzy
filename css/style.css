@@ -3468,6 +3468,118 @@ li.slick-active~li {
     overflow: hidden;
 }
 
+.preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #51AA90;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preload-img {
+    width: 120px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.preloader__animation {
+    position: relative;
+}
+
+.preloader__bublles {
+    position: absolute;
+    left: -80px;
+    bottom: 70px;
+    z-index: 102;
+    width: 100%;
+    height: 100%;
+}
+
+.pr-bub {
+    position: absolute;
+    opacity: 0;
+}
+
+.bub1 {
+    bottom: 0;
+    right: 30px;
+}
+
+.bub2 {
+    bottom: 15px;
+    right: 20px;
+}
+
+.bub3 {
+    bottom: 30px;
+    right: 45px;
+}
+
+.bub4 {
+    bottom: 50px;
+    right: 20px;
+}
+
+.bub5 {
+    bottom: 55px;
+    right: 50px;
+}
+
+.bub6 {
+    bottom: 70px;
+    right: 35px;
+}
+
+.bub7 {
+    bottom: 75px;
+    right: 15px;
+}
+
+.bub8 {
+    bottom: 85px;
+    right: 45px;
+}
+
+.bub9 {
+    bottom: 95px;
+    right: 65px;
+}
+
+.bub10 {
+    bottom: 110px;
+    right: 30px;
+}
+
+.bub11 {
+    bottom: 95px;
+    right: 10px;
+}
+
+.bub12 {
+    bottom: 120px;
+    right: 50px;
+}
+
+.animationPreBub {
+    animation: animationPreBub .3s linear forwards;
+}
+
+@keyframes animationPreBub {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+}
+
 @media(max-width: 1600px) {
     .dust-text-poro {
         width: 450px;
