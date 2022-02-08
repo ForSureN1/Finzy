@@ -274,11 +274,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+
 let preloader = document.querySelector('.preloader')
 let preloadImg = document.querySelectorAll('.pr-bub');
 let arrayBub = Array.from(preloadImg)
 let reverseArray = arrayBub.reverse();
-
 let timeout;
 
 function setClassBub() {
@@ -296,7 +296,6 @@ function setClassBub() {
         }, 300 * (index + 1))
     })
 }
-
 setClassBub();
 
 document.querySelector('body').style.overflow = "hidden";
@@ -309,3 +308,17 @@ window.onload = () => {
     }, 1000)
     clearTimeout(timeout)
 }
+
+// const preloadImages = document.querySelectorAll('.pr-bub');
+// const preloadImagesAnimationInterval = setInterval((state) => {
+//     const item = preloadImages[state.index];
+//     item.classList.toggle('animationPreBub', state.addClass);
+//     state.index--;
+//     if (state.index < 0) {
+//         state.addClass = !state.addClass;
+//         state.index = preloadImages.length - 1;
+//     }
+// }, 300, {
+//     addClass: true,
+//     index: preloadImages.length - 1,
+// });
