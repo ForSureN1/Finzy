@@ -279,9 +279,11 @@ let preloadImg = document.querySelectorAll('.pr-bub');
 let arrayBub = Array.from(preloadImg)
 let reverseArray = arrayBub.reverse();
 
+let timeout;
+
 function setClassBub() {
     reverseArray.forEach((bub, index) => {
-        setTimeout(() => {
+        timeout = setTimeout(() => {
             bub.classList.add('animationPreBub')
             if (index === (reverseArray.length - 1)) {
                 setTimeout(() => {
@@ -299,4 +301,8 @@ setClassBub();
 
 window.onload = () => {
     preloader.classList.add('disabled')
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 1000)
+    clearTimeout(timeout)
 }

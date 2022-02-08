@@ -3479,6 +3479,7 @@ li.slick-active~li {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s linear;
 }
 
 .preload-img {
@@ -3566,18 +3567,22 @@ li.slick-active~li {
 }
 
 .animationPreBub {
-    animation: animationPreBub .3s linear forwards;
+    animation: animationPreBub .4s ease-out forwards;
 }
 
 @keyframes animationPreBub {
     from {
         opacity: 0;
-        transform: translateY(5px);
+        transform: translateY(0);
     }
     to {
         opacity: 1;
-        transform: translateY(-5px);
+        transform: translateY(-15px);
     }
+}
+
+.preloader.disabled {
+    opacity: 0;
 }
 
 @media(max-width: 1600px) {
